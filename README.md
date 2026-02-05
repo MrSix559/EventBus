@@ -97,7 +97,7 @@ void OnScoreUpdated(int score)
 EBus.Invoke("GameOver");
 
 // Invoke an event with one argument
-EBus.Invoke("ScoreUpdated", 100);
+EBus.Invoke<int>("ScoreUpdated", 100);
 ```
 
 ---
